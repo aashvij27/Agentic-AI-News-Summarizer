@@ -1,6 +1,6 @@
 # Agentic AI News Retrieval & Summarization
 
-An autonomous multi-agent pipeline that fetches, scrapes, and summarizes real-time news articles into a structured digest — built with **LangGraph**, **LangChain**, and **NewsAPI**.
+An autonomous multi-agent pipeline that fetches, scrapes, and summarizes real-time news articles into a structured article, built with **LangGraph**, **LangChain**, and **NewsAPI**.
 
 ---
 
@@ -17,7 +17,7 @@ Given a search topic, the agent automatically:
 
 ## Architecture
 
-The workflow is a typed **LangGraph state machine** — four nodes wired in sequence:
+The workflow is four nodes wired in sequence:
 
 ```
 fetch_news → fetch_article_bodies → summarize_articles → build_final_digest
